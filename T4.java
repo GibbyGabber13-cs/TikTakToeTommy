@@ -235,7 +235,7 @@ class T4{
        }
        return weights;
    }
-
+//    public static int checkforblocks(ArrayList<Integer> grid, )
    public static void main(String[] args){
    
       System.out.println("what square would you like to run?");
@@ -284,6 +284,7 @@ class T4{
             display(grid, size);
             wm = winnMove(grid, size);
          }
+         System.out.println(moves);
          System.out.println(wm);
          System.out.println("Before update: " + weights);
          Learn(weights, moves, wm, lr, size);
@@ -294,6 +295,7 @@ class T4{
          System.out.println("After update: " + weights2);
          System.out.println("play again? [0 = yes] [1 = no]");
          Scanner playgain = new Scanner(System.in);
+         moves.clear();
          esc = 0;
    }
   }
